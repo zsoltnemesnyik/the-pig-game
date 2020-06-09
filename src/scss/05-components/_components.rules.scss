@@ -1,0 +1,45 @@
+.rules {
+    background: $color-white;
+    border-radius: 5px;
+    left: 100%;
+    opacity: 0;
+    padding: 1.5rem 3rem;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+    visibility: hidden;
+    width: 65vw;
+
+    @include media-breakpoint-up(md) {
+        width: initial;
+    }
+
+    &__title {
+        color: $color-primary-dark;
+        font-size: 3rem;
+        font-weight: $fontWeightMedium;
+        margin-bottom: 1rem;
+    }
+    
+    &__text {
+        color: rgba($color-primary-dark, .6);
+        font-size: 1.5rem;
+        font-weight: $fontWeightMedium;
+        margin-bottom: 2rem;
+    }
+
+    &__item {
+        list-style: none;
+        text-align: left;
+
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__rule {
+        color: $color-primary-dark;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,23 @@
+.player--active {
+    .current-score {
+        background: darken($color-primary-medium, 15%);
+    }
+
+    .player__heading {
+        color: $color-primary-dark;
+        font-weight: $fontWeightLight;
+        position: relative;
+    
+        &::after {
+            background: $color-complementary;
+            border-radius: 50%;
+            content: '';
+            height: 1rem;
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+        }
+    }
+}

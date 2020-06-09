@@ -1,0 +1,17 @@
+.current-score {
+    background: $color-primary-medium;
+    border-radius: 5px;
+    padding: 1rem;
+
+    &__heading {
+        color: rgba($color-white, .7);
+        font-weight: $fontWeightLight;
+        margin-bottom: .75rem;
+        text-transform: uppercase;
+    }
+
+    &__value {
+        color: $color-white;
+        font-weight: $fontWeightLight;
+    }
+}

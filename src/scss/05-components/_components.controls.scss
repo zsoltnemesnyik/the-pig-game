@@ -1,0 +1,5 @@
+.controls {
+    @include flex(column);
+
+    margin: 2.5rem 0;
+}

@@ -1,0 +1,13 @@
+.toggle-icon {
+    background: $color-complementary;
+    border-radius: 50%;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 3rem 3rem 3rem .75rem;
+    position: fixed;
+    right: -2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s;
+}

@@ -1,0 +1,16 @@
+.app {
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 2rem 3rem;
+
+    @include media-breakpoint-up(md) {
+        max-width: 100%;
+    }
+
+    .content {
+        @include media-breakpoint-up(md) {
+            height: 60vh;
+        }
+    }
+}

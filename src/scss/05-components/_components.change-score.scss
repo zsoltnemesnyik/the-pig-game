@@ -1,0 +1,65 @@
+.change-score {    
+    background: rgba($color-text, .975);
+    height: 100vh;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .3s, visibility .3s;
+    visibility: hidden;
+    width: 100vw;
+    
+    &::after {
+        color: $color-white;
+        content: '\f057';
+        cursor: pointer;
+        font-family: "Font Awesome 5 Free";
+        font-size: 3rem;
+        font-weight: 900;
+        right: 3rem;
+        position: absolute;
+        transition: all .3s;
+        top: 3rem;
+    }
+    
+    &__content {
+        left: 50%;
+        padding: 0 2rem;
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    &__text {
+        color: $color-white;
+        font-weight: $fontWeightLight;
+        line-height: 1.5;
+    }
+
+    
+    &__input {
+        background: rgba($color-white, .1);
+        border: none;
+        border-radius: 5px;
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: $fontWeightLightest;
+        margin-right: 1rem;
+        padding: 1.1rem 1rem;
+    }
+    
+    &__btn {
+        background: transparent;
+        border: 2px solid $color-complementary;
+        border-radius: 5px;
+        color: $color-white;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-transform: lowercase;
+        transition: all .3s;
+
+        &:hover {
+            background: $color-complementary;
+        }
+    }
+}

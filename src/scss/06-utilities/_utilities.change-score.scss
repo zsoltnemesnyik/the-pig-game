@@ -1,0 +1,16 @@
+.change-score {
+    &__text--highlighted {
+        color: $color-complementary;
+    }
+
+    &__text--explanation {
+        margin-bottom: 5rem;
+    }
+
+    &.show {
+       opacity: 1;
+       transition: opacity .3s, visibility .3s;
+       visibility: visible;       
+   } 
+
+}

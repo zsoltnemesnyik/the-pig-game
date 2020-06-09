@@ -1,9 +1,24 @@
+/**********************************************
+*** BOOTSTRAP
+**********************************************/
 // Required
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
-
 // Optional
 @import "~bootstrap/scss/grid";
 
-@import './general/base'
+// Vendor files
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.13.0/css/all.css');
+
+/**********************************************
+*** ITCSS
+**********************************************/
+@import './00-settings/-settings';
+@import './01-tools/-tools';
+@import './02-generic/-generic';
+@import './03-elements/-elements';
+@import './04-objects/-objects';
+@import './05-components/-components';
+@import './06-utilities/-utilities';

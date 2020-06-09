@@ -1,0 +1,27 @@
+.controls-button {
+    @include flex;
+
+    &:hover,
+    &:focus,
+    &:active {
+        .controls-button__icon {
+            margin-right: 2rem;
+        }
+    }
+    
+    &__icon {
+        color: $color-primary-dark;
+        font-size: 2rem;
+        margin-right: 1rem;
+        transition: all .3s;
+    }
+
+    &__btn {
+        background: transparent;
+        border: none;
+        color: $color-primary-dark;
+        cursor: pointer;
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+}

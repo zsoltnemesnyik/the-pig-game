@@ -1,0 +1,22 @@
+.player {
+    @include flex(column);
+    height: 100%;
+    
+    &__heading {
+        color: rgba($color-primary-dark, .5);
+        font-weight: $fontWeightLightest;
+        margin-bottom: .5rem;
+        text-transform: uppercase;
+    }
+
+    &__score {
+        color: $color-primary-dark;
+        font-size: 5rem;
+        font-weight: $fontWeightLightest;
+        margin-bottom: 1rem;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 7rem;
+        }
+    }
+}

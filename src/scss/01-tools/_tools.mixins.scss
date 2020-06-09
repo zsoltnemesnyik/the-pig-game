@@ -1,0 +1,15 @@
+@mixin flex($direction:row, $break:nowrap, $alignWidth:center, $alignHeight:center) {
+    display: flex;
+    flex-flow: $direction $break;
+    justify-content: $alignWidth;
+    align-items: $alignHeight;
+}
+
+@mixin gradientHalf($direction, $firstColor, $secondColor, $opacity) {
+  background: linear-gradient(
+        to $direction,
+        rgba($firstColor, $opacity) 0%,
+        rgba($firstColor, $opacity) 50%,
+        rgba($secondColor, $opacity) 50%
+    );
+}

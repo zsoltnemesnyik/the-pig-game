@@ -1,0 +1,14 @@
+.info {
+    margin-bottom: 1.5rem;
+
+    &__title {
+        color: $color-complementary;
+        font-weight: $fontWeightMedium;
+        margin-bottom: 1rem;
+    }
+    
+    &__score-to-reach {
+        color: $color-white;
+        font-size: 1.5rem;
+    }
+}
