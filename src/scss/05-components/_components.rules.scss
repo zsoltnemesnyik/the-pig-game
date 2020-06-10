@@ -10,10 +10,7 @@
     transition: all .5s;
     visibility: hidden;
     width: 65vw;
-
-    @include media-breakpoint-up(md) {
-        width: initial;
-    }
+    z-index: 1;
 
     &__title {
         color: $color-primary-dark;
