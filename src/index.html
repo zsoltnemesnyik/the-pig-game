@@ -13,17 +13,17 @@
                     <span class="info__score-to-reach info__score-to-reach--value">100</span>
                 </p>
             </div>
-            <div class="app app--active-0">
+            <div class="app">
                 <div class="row content">
                     <div class="col-md-4">
-                        <div class="player player--1 player--active">
+                        <div class="player player--0">
                             <h3 class="player__heading">
                                 player 1
                             </h3>
-                            <h2 class="player__score">26</h2>
+                            <h2 class="player__score player__score--0">26</h2>
                             <div class="current-score">
                                 <h4 class="current-score__heading">current</h4>
-                                <h3 class="current-score__value">0</h3>
+                                <h3 class="current-score__value current-score__value--0">0</h3>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,10 @@
                             <button class="controls-button__btn">new game</button>
                         </div>
     
-                        <img class="controls-dice controls-dice--shake" src="./img/dice-1.png" alt="Dice image">
+                        <div class="controls-dices">
+                            <img class="controls-dice controls-dice--0" src="./img/dice-pig.png" alt="Dice image">
+                            <img class="controls-dice controls-dice--1" src="./img/dice-pig.png" alt="Dice image">
+                        </div>
     
                         <div class="controls-button controls-button--hold">
                             <i class="controls-button__icon fas fa-hand-paper"></i>
@@ -41,14 +44,14 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="player player--2">
+                        <div class="player player--1">
                             <h3 class="player__heading">
                                 player 2
                             </h3>
-                            <h2 class="player__score">26</h2>
+                            <h2 class="player__score player__score--1">26</h2>
                             <div class="current-score">
                                 <h4 class="current-score__heading">current</h4>
-                                <h3 class="current-score__value">0</h3>
+                                <h3 class="current-score__value current-score__value--1">0</h3>
                             </div>
                         </div>
                     </div>
@@ -110,5 +113,6 @@
                 </li>
             </ul>
         </div>
+        
     </body>
 </html>
