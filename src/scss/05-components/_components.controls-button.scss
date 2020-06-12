@@ -5,14 +5,15 @@
     &:focus,
     &:active {
         .controls-button__icon {
-            margin-right: 2rem;
+            padding-right: 2rem;
+            cursor: pointer;
         }
     }
     
     &__icon {
         color: $color-primary-dark;
         font-size: 2rem;
-        margin-right: 1rem;
+        padding-right: 1rem;
         transition: all .3s;
     }
 
