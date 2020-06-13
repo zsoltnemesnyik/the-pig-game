@@ -111,6 +111,16 @@ elements.dices.forEach(dice => {
             if (randNum1 == 1 || randNum2 == 1) {
                 next();
             }
+
+            if (randNum1 == 6 && randNum2 == 6) {
+                if (state.activePlayer == 0) {
+                    state.totalScore0 = 0;
+                } else if (state.activePlayer == 1) {
+                    state.totalScore1 = 0;
+                }
+
+                next();
+            }
     
             // Display the scores
             initView.displayValues(elements.scores, state);
