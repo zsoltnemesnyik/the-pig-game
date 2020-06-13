@@ -47,7 +47,7 @@ const init = () => {
     state = initializeValues();
     
     // Define score to reach
-    state.scoreToReach = 20;
+    state.scoreToReach = 100;
 
     // Display init values
     initView.displayValues(elements.scores, state);
