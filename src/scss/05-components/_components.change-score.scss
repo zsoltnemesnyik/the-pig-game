@@ -7,13 +7,10 @@
     visibility: hidden;
     width: 100vw;
     
-    &::after {
+    &__close {
         color: $color-white;
-        content: '\f057';
         cursor: pointer;
-        font-family: "Font Awesome 5 Free";
         font-size: 3rem;
-        font-weight: 900;
         right: 3rem;
         position: absolute;
         transition: all .3s;

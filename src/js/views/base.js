@@ -12,5 +12,10 @@ export const elements = {
     newGameBtn: document.querySelector('.controls-button--new-game'),
     playerPanels: document.querySelectorAll('.player'),
     playerHeadings: Array.from(document.querySelectorAll('.player__heading')),
-    appPanel: document.querySelector('.app')
+    appPanel: document.querySelector('.app'),
+    changeScorePanel: document.querySelector('.change-score'),
+    changeScoreCloseBtn: document.querySelector('.change-score__close'),
+    changeScoreInput: document.querySelector('.change-score__input'),
+    changeScoreInputBtn: document.querySelector('.change-score__btn'),
+    changeScoreValue: document.querySelector('.info__score-to-reach--value')
 }

@@ -9,6 +9,8 @@ import * as roll from './models/Roll';
 import * as rollView from './views/rollView';
 import * as nextPlayer from './models/NextPlayer';
 import * as nextPlayerView from './views/nextPlayerView';
+import {changeScore} from './models/ScoreToReach';
+import {displayNewScore} from './views/scoreToReachView';
 
 // import images to ./dist
 function importAll(r) {
@@ -24,7 +26,7 @@ elements.rulesIcon.addEventListener('click', () => {
     elements.bodyNotRules.style.filter = elements.bodyNotRules.style.filter == 'blur(5px) brightness(30%)' ? '' : 'blur(5px) brightness(30%)';
 });
 
-let state, scoreToReach;
+let state;
 
 const init = () => {
     // Set active player class on the first player
@@ -38,15 +40,15 @@ const init = () => {
         el.innerHTML = `player ${i+1}`;
     })
     
-    // Define score to reach
-    scoreToReach = 20;
-    
     // Display default dices
     initView.resetDices(elements.dices);
     
     // Get init values
     state = initializeValues();
     
+    // Define score to reach
+    state.scoreToReach = 20;
+
     // Display init values
     initView.displayValues(elements.scores, state);
     
@@ -137,7 +139,7 @@ elements.holdBtn.addEventListener('click', () => {
         let activeTotal = state.activePlayer == 0 ? state.totalScore0 : state.totalScore1;
     
         // Check if the active player's total reached the Score-To-Reach value
-        if (roll.checkWinner(activeTotal, scoreToReach) == true) {
+        if (roll.checkWinner(activeTotal, state.scoreToReach) == true) {
             state.gamePlaying = false;
 
         // Remove active player class from current player
@@ -155,4 +157,29 @@ elements.holdBtn.addEventListener('click', () => {
         // Display the scores
         initView.displayValues(elements.scores, state);
     }
+});
+
+/**********************************
+ * CHANGE SCORE
+ **********************************/
+const changeScoreToReach = () => {
+    state.scoreToReach = changeScore(state.scoreToReach, elements.changeScoreInput);
+    
+    displayNewScore(elements.changeScoreValue, state.scoreToReach);
+    
+    elements.changeScorePanel.classList.toggle('show');
+}
+
+elements.changeScoreInputBtn.addEventListener('click', () => {
+    changeScoreToReach();
+});
+
+elements.changeScoreInput.addEventListener('keyup', (e) => {
+    if (event.keyCode === 13) {
+        changeScoreToReach();
+    }
+});
+
+elements.changeScoreCloseBtn.addEventListener('click', () => {
+    elements.changeScorePanel.classList.toggle('show');
 });
