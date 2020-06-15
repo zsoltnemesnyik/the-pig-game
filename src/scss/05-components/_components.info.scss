@@ -1,9 +1,17 @@
 .info {
     margin: 1rem auto;
+
+    @include media-breakpoint-up(lg) {
+        margin: unset;
+    }
     
     &__score-to-reach {
         color: $color-white;
         font-size: 1.5rem;
         font-weight: $fontWeightMedium;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+        }
     }
 }

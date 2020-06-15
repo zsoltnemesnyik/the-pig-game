@@ -12,6 +12,10 @@
         padding: 2.5rem 3rem;
     }
 
+    @include media-breakpoint-up(lg) {
+        margin: 2rem auto;
+    }
+
     .content {
         @include media-breakpoint-up(md) {
             margin: 2rem auto;

@@ -2,4 +2,9 @@
     color: $color-complementary;
     font-size: 1.5rem;
     letter-spacing: 2px;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+        font-weight: 700;
+    }
 }
