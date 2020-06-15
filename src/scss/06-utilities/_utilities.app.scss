@@ -1,7 +1,7 @@
 .app--active-0 {
     @include gradientHalf(bottom, $color-primary-light, $color-white, .85);
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
         @include gradientHalf(right, $color-primary-light, $color-white, .85);
     }
 }
@@ -9,7 +9,7 @@
 .app--active-1 {
     @include gradientHalf(bottom, $color-white, $color-primary-light, .85);
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
         @include gradientHalf(right, $color-white, $color-primary-light, .85);
     }
 }

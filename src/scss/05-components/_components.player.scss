@@ -5,7 +5,7 @@
     &__heading {
         color: rgba($color-primary-dark, .5);
         font-weight: $fontWeightLightest;
-        margin-bottom: .5rem;
+        margin-bottom: 1.5rem;
         text-transform: uppercase;
     }
 
@@ -14,10 +14,15 @@
         font-size: 5rem;
         font-weight: $fontWeightLightest;
         line-height: .75;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 7rem;
+            margin-bottom: 3rem;
+        }
 
         @include media-breakpoint-up(md) {
-            margin-bottom: 7rem;
+            margin-bottom: 5rem;
         }
     }
 }

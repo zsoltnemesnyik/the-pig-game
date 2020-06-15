@@ -1,8 +1,8 @@
 .controls {
     @include flex(column);
-    margin: 1rem 0;
+    margin: 2rem 0;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
         justify-content: space-around;
         margin: unset;
     }

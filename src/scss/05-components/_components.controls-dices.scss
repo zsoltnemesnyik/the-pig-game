@@ -4,7 +4,16 @@
     grid-column-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
 
-    @include media-breakpoint-up(md) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    -webkit-tap-highlight-color: transparent;
+
+    @include media-breakpoint-up(sm) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
     }
@@ -17,16 +26,7 @@
     margin: 2rem 0;
     width: 6rem;
 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    
-    -webkit-tap-highlight-color: transparent;
-
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
         margin: 1rem 0;
     }
 }

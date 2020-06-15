@@ -9,7 +9,7 @@
     transform: translateY(-50%);
     transition: all .5s;
     visibility: hidden;
-    width: 65vw;
+    width: calc(80% - 3rem);
     z-index: 1;
 
     &__title {
@@ -23,15 +23,28 @@
         color: rgba($color-primary-dark, .6);
         font-size: 1.5rem;
         font-weight: $fontWeightMedium;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     &__item {
         list-style: none;
+        position: relative;
         text-align: left;
 
         &:not(:last-of-type) {
             margin-bottom: 1rem;
+        }
+
+        &::before {
+            background: $color-complementary;
+            border-radius: 50%;
+            content: '';
+            height: .5rem;
+            left: -1rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: .5rem;
         }
     }
 

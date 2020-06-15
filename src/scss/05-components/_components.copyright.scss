@@ -1,8 +1,17 @@
 .copyright {
-    bottom: .5rem;
     color: $color-white;
     font-size: 1rem;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
+    font-weight: $fontWeightMedium;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 90%;
+    text-shadow: 1px 1px 2px $color-black;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.3rem;
+    }
+
+    &__made-by {
+        color: $color-complementary
+    }
 }

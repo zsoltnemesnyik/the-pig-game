@@ -9,10 +9,19 @@
         font-weight: $fontWeightLight;
         margin-bottom: .75rem;
         text-transform: uppercase;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+        }
     }
 
     &__value {
         color: $color-white;
         font-weight: $fontWeightLight;
+
+        @include media-breakpoint-up(lg) {
+            font-weight: $fontWeightLightest;
+            font-size: 3.5rem;
+        }
     }
 }
