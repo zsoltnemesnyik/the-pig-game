@@ -5,8 +5,11 @@
     &__heading {
         color: rgba($color-primary-dark, .5);
         font-weight: $fontWeightLightest;
-        margin-bottom: 1.5rem;
         text-transform: uppercase;
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__score {
