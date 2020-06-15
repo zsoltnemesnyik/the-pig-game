@@ -18,11 +18,14 @@ body {
     display: grid;
     font-family: $font-primary;
     font-weight: 300;
-    height: 100vh;
     line-height: 1;
     text-align: center;
     
-    @include media-breakpoint-up(sm) {
+    @media screen and (min-height: 350px) {
+        height: 100vh;
+    }
+    
+    @media screen and (min-height: 400px) {
         align-content: center;
     }
 }

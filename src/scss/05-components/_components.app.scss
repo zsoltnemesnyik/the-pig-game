@@ -7,11 +7,18 @@
     @include media-breakpoint-up(sm) {
         max-width: 100%;
     }
+    
+    @include media-breakpoint-up(md) {
+        padding: 2.5rem 3rem;
+    }
 
     .content {
         @include media-breakpoint-up(md) {
             margin: 2rem auto;
-            min-height: 65vh;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-height: 40vh;
         }
     }
 }
