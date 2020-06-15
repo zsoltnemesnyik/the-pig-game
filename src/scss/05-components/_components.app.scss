@@ -10,6 +10,7 @@
 
     .content {
         @include media-breakpoint-up(md) {
+            margin: 2rem auto;
             min-height: 65vh;
         }
     }
