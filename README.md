@@ -18,7 +18,7 @@ This is a virtual version of a classic dice game, called ***The Pig Game***. The
 On the welcome screen, you can change the final score, which is 100 by default.
 
 ```
-###RULES
+**RULES**
 - if the ACTIVE PLAYER rolls a 1 with any of the dices, that player loses it's CURRENT points, and it's the other player's turn
 - if the ACTIVE PLAYER rolls 6 with both dices (2x6), that player loses it's CURRENT and TOTAL points (complete reload of points), and it's the next player's turn 
 ```
